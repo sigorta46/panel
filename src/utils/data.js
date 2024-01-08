@@ -1,6 +1,7 @@
 import { AiOutlineFileSearch } from "react-icons/ai";
 import { HiOutlineDocumentCheck } from "react-icons/hi2";
-import {  MdOutlinePayment } from "react-icons/md"; 
+import {  MdOutlinePayment,  } from "react-icons/md";
+import { FaUsers } from "react-icons/fa"; 
 
 export const sideBarData = () => [
     {
@@ -20,6 +21,13 @@ export const sideBarData = () => [
         query: "sertificates",
         icon: < HiOutlineDocumentCheck />,
         url: `/sertificates`
+    },
+    
+    {
+        title: "Kullanıcı Listesi",
+        query: "users",
+        icon: < FaUsers />,
+        url: `/all-user`
     },
 ] ;
 
@@ -54,4 +62,12 @@ export const ListSertificateHead = [
     { name: 'Teklif Tarihi' }, 
     { name: 'Teklif Veren', width: 150 },  
     { name: 'Bitiş Tarihi'}, 
+];
+
+export const ListUsersHead = [ 
+    { name: 'İsim Soyisim', width: 175 , sortable: true}, 
+    { name: 'Telefon'}, 
+    { name: 'T.C'}, 
+    { name: 'Kayıt Tarihi'},  
+    { name: 'Kullanıcı Türü' },  
 ];

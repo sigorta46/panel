@@ -10,6 +10,7 @@ import SertificateList from "./pages/SertificateList";
 import SertificatePanel from "./pages/Sertificates";
 import DemandDetail from "./pages/DemandDetail";
 import AddSertificate from "./pages/AddSertificate";
+import UsersList from "./pages/UsersList";
 
 
 
@@ -20,6 +21,9 @@ function App() {
         <Routes >
           <Route path="/" element={<Login />} /> 
           <Route path='*' element={<NotFound />} />
+
+          
+          <Route path='/all-user' element={<UsersList />} />
 
           <Route path='/demands/*' element={<DemandList />} />
           <Route path='/demands/detail/:demand_id' element={<DemandDetail />} />
